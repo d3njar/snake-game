@@ -17,7 +17,7 @@ let intervalTime = 0;
 let interval = 0;
 
 document.addEventListener("DOMContentLoaded", function () {
-    document.addEventListener("keyup", control);
+    document.addEventListener("keydown", control);
     createBoard();
     startGame();
     playAgain.addEventListener("click", replay);
@@ -100,13 +100,13 @@ function randomApple(squares) {
 }
 
 function control(e){
-    if (e.keycode === 68) {
+    if (e.keyCode === 68) {
         direction = 1; //right
-    } else if (e.keycode === 87) {
+    } else if (e.keyCode === 87) {
         direction = -width; //if we press the up arrow, the snake will go ten divs up
-    } else if (e.keycode === 65) {
+    } else if (e.keyCode === 65) {
         direction = -1; //left, the snake will go left one div
-    } else if (e.keycode === 83) {
+    } else if (e.keyCode === 83) {
         direction = +width; // down the snake will instantly appear 10 divs below from the current div
     }
 }
