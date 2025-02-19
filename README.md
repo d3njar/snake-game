@@ -8,6 +8,9 @@ A **simple snake game** built using JavaScript, HTML, and CSS. This is my first 
 - Avoid colliding with the walls or yourself.  
 - Try to get the **highest score possible**!  
 
+## 🌐 Live Demo
+[Play the game here!](https://d3njar.github.io/snake-game/)
+
 ## 🛠️ Features
 ✅ Simple, beginner-friendly JavaScript code  
 ✅ Grid-based movement  
